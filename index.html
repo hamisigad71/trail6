@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    
   </head>
   <body>
 
@@ -50,6 +52,7 @@
           </div>
         </nav>
       </div>
+
       
 
       <div class="hero" id="home">
@@ -113,7 +116,7 @@
       </div>
 
       <div class="services container" id="services">
-        <h2 class="w3-center">Our services</h2>
+        <h2 class="w3-center" >Our services</h2>
         <div class="cards w3-padding-large w3-margin-top">
           <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
             <h3>WEB DEVELOPMENT</h3>
@@ -219,7 +222,7 @@
               </footer>
             </div>
 
-            <div class="card w3-card-4">
+            <div class="card w3-card-4" data-anijs="if: click, do: flipInY animated, to: .container-box">
               <header class="w3-container w3-indigo">
                  <h3>JUNIOR FRONTEND DEVELOPER</h3>
               </header>
@@ -294,5 +297,13 @@
       mobileNavigation.classList.toggle('mobile-links-active');
     }
 </script>
+<script></script>
+<script src="anijs-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+  
+<!-- Include to use $addClass, $toggleClass or $removeClass -->
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+<div data-anijs="if: click, do: flipInY, to: .container-box"></div>
   </body>
 </html>
